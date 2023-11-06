@@ -1,18 +1,19 @@
+/*
+ * 0x05. C - Pointers, arrays, and strings
+ * Task 0. 98 Battery St.
+ * Purpose: Update the value of a pointer.
+ */
+
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code 
+ * reset_to_98 - Updates the value of the integer pointer
+ * @n: Pointer to an integer
  *
- * Return: Always 0.
+ * Description: This function takes a pointer to an integer and updates the
+ * value it points to with 98.
  */
-int main(void)
+void reset_to_98(int *n)
 {
-int n;
-n = 402;
-printf("n=%d\n", n);
-reset_to_98(&n);
-printf("n=%d\n", n);
-
-return (0);
+	*n = 98;
 }
