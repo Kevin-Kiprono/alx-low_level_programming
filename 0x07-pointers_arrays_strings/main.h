@@ -16,4 +16,9 @@ void print_chessboard(char (*a)[8]);
 void print_diagsums(int *, int);
 void set_string(char **s, char *to);
 
+
+/* Function prototype for _putchar */
+int _putchar(char);
+
+
 #endif /*MAIN_H*/
