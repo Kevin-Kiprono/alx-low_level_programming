@@ -7,12 +7,12 @@
  *    * @argv: array of arguements
  *     *
  *      * Return: always 0 (success)
- *       */
+ */
 
 int main(int argc, char *argv[])
 {
-		printf("%s\n", *argv);
-			printf(" %d\n", argc);
+printf("%s\n", *argv);
+printf(" %d\n", argc);
 
-				return (0);
+return (0);
 }
