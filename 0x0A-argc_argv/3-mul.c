@@ -1,30 +1,28 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- *  * main - prints the multiplication of the two arrys
+ *  * main - prints the multiplication of two numbers
  *   * @argc: argument count
  *    * @argv: argument vector
  *     *
  *      * Return: Always 0
- *       */
-int main(int argc, char argv[])
+ */
+int main(int argc, char *argv[])
 {
-	        int n1 = 0, n2 = 0;
+int i, j, mul;
 
-		        if (argc == 3)
-
-				        {
-						                n1 = atoi(argv[1]);
-								                n2 = atoi(argv[2]);
-										                printf("%d\n", n1 * n2);
-												        }
-			        else
-					        {
-							                printf("Error\n");
-									        }
-
-				        return (0);
-
+if (argc != 3)
+{
+printf("Error\n");
+return (1);
 }
-~                                                                                                        ~                                                                                                        ~                                            
+
+i = atoi(argv[1]);
+j = atoi(argv[2]);
+mul = i *j;
+
+printf("%d\n", mul);
+return (0);
+}
