@@ -2,9 +2,9 @@
 #include "dog.h"
 
 /**
- *  * print_dog - prints character name
- *   * @d: Pointer to be printer
- *    *
+ *  print_dog - prints character name
+ *  @d: Pointer to be printer
+ *
  */
 void print_dog(struct dog *d)
 {
@@ -20,9 +20,9 @@ void print_dog(struct dog *d)
 			if (!d->owner)
 						{
 printf("owner: (nil)\n");
-												}
+						}
+}
 else
-								{
-printf("owner: %s\n", d->owner);
-		}
+{
+	printf("owner: %s\n", d->owner);
 }
